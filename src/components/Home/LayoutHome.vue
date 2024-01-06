@@ -48,7 +48,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import Product1 from "./Product1.vue";
+import Product1 from "@/components/Home/Product1.vue";
 // import Product2 from "./Product2.vue";
 import Product3 from "./Product3.vue";
 import Product4 from "./Product4.vue";

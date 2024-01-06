@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="">
     <div class="row flex-wrap">
       <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -75,7 +75,7 @@
           <div
             class="item-img d-flex justify-content-center align-items-center"
           >
-            <img src="../../assets/card/Rectangle 9.png" alt="" />
+            <img src="@/assets/card/Rectangle 9.png" alt="" />
           </div>
           <div class="item-content">
             <div
@@ -97,7 +97,39 @@
   </div>
 </template>
 <script setup lang="ts">
+</script>-->
+
+
+<!-- ProductItem.vue -->
+<template>
+  <div class="item">
+    <div class="item-img d-flex justify-content-center align-items-center">
+      <!-- <img :src="product.image" :alt="product.title" /> -->
+    </div>
+    <div class="item-content">
+      <div
+        class="d-flex flex-column justify-content-center align-items-flex-start"
+      >
+        <div class="d-flex justify-content-between">
+          <!-- <h6>{{ product.title }}</h6>
+          <h6>{{ product.price }}</h6> -->
+        </div>
+        <!-- <div class="lh-lg product-description">{{ product.description }}</div>
+        <div class="product-price">{{ product.colors }} colors available</div> -->
+      </div>
+    </div>
+  </div>
+</template>
+
+  
+<script setup lang="ts">
+import { defineProps } from "vue";
+
+const props = defineProps(["product"]);
 </script>
+
+
+
 <style scoped lang="css">
 .item-img {
   border-radius: 10px 10px 0px 0px;

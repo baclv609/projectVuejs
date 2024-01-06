@@ -1,5 +1,9 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+// main.ts
+import { createApp } from 'vue';
+import App from './App.vue';
+import MyView from './View/MyView.vue';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.component('my-view', MyView);
+
+app.mount('#app');

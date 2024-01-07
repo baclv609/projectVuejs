@@ -3,13 +3,17 @@
     <div class="layout-title">
       <h1 class="p-5">New Products</h1>
     </div>
-    <Product1 />
+    <!-- <Product1 /> -->
+    <ParentComponent/>
+
   </div>
   <div class="PopularCards2">
     <div class="layout-title">
       <h1 class="text-center p-5">Popular Finds</h1>
     </div>
-    <Product1 />
+    <ParentComponent/>
+
+    <!-- <Product1 /> -->
     <!-- <Product2 /> -->
   </div>
 
@@ -48,6 +52,9 @@
   </div>
 </template>
 <script setup lang="ts">
+
+import ParentComponent from "@/components/demoProps/ParentComponent.vue"
+
 import Product1 from "@/components/Home/Product1.vue";
 // import Product2 from "./Product2.vue";
 import Product3 from "./Product3.vue";

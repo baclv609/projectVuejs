@@ -1,12 +1,11 @@
-<!-- ParentComponent.vue -->
 <template>
   <div>
-    <product-list :products="parentProducts" />
+    <ProductList :products="parentProducts" />
   </div>
 </template>
 
 <script setup lang="ts">
-import * as ProductList from "../ListProduct/ProductList.vue";
+import ProductList from "../ListProduct/ProductList.vue";
 
 const parentProducts = [
   {
@@ -23,6 +22,21 @@ const parentProducts = [
     description: "Product description 2",
     colors: 3,
   },
-  // Thêm các sản phẩm khác nếu cần
+  {
+    img: "https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-hinh-anh-ngay-moi-hanh-phuc-sieu-cute-inkythuatso-09-13-35-50.jpg",
+    title: "Product 3",
+    price: "$1,495",
+    description: "Product description 2",
+    colors: 3,
+  },
+  {
+    img: "https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-hinh-anh-ngay-moi-hanh-phuc-sieu-cute-inkythuatso-09-13-35-50.jpg",
+    title: "Product 4",
+    price: "$1,495",
+    description: "Product description 2",
+    colors: 4,
+  },
+  
+  
 ];
 </script>
